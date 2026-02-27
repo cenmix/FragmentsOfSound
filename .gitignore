@@ -66,3 +66,6 @@ $RECYCLE.BIN/
 *.old
 *~
 *.log
+
+usercache.json
+usernamecache.json
