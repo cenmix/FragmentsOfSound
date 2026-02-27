@@ -1,0 +1,178 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "390D0C7150F219A5"
+	group: "7A11444F86B1AC7D"
+	icon: "ftbquests:book"
+	id: "390D0C7150F219A5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"你从冰凉的棺材之中醒来，四周一片寂静。"
+				"你知道，你成为了异端。"
+				"就在不久前，你刚刚被一只伴生物啃咬得血肉模糊，可现在，你却完好无缺地重生了。"
+				""
+				"异端，也被称为二次命"
+				"——那些被伴生物杀死后重生的存在。"
+				"真正的异端不但能从死亡中归来，还会获得强大的异能。"
+				"但你丝毫没有在体内感受到任何本能，任何可以被称之为"
+				"异能"
+				"的东西。"
+				"你完全无法判断自己到底是不是异端。"
+				""
+				"但不管怎么说，能再次活过来，便是件好事。"
+			]
+			icon: "minecraft:enchanted_golden_apple"
+			id: "1B7F6249D6B25032"
+			tasks: [{
+				id: "0271FD9ED4065FCA"
+				title: "开始旅途"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["56D6DC0439949225"]
+			description: [
+				"在重建之中，木头是&7最基础&r的建筑与合成材料。"
+				""
+				"&9[任务需求]&r收集一些原木。"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:oak_log"
+			id: "221C4BB41725A92F"
+			rewards: [{
+				count: 5
+				id: "05445237B43D0517"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				id: "525FB3783E99D5BC"
+				title: "需要更多木头"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["221C4BB41725A92F"]
+			description: [
+				"在这个世界生存了一天的你，发觉武器在这个多变可怕的世界中显得十分重要。"
+				"&9[任务需求]&r打造一把铁长剑。"
+			]
+			hide_until_deps_complete: true
+			id: "1596474C6CEC1F38"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0BDF0561C77CA88F"
+				table_id: 3160360155417189970L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "1A056EF0A0424609"
+				item: {
+					Count: 1
+					id: "spartanweaponry:iron_longsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "制作第一把武器"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1B7F6249D6B25032"]
+			description: [
+				"你从棺材中走出来，你决定要在日落前找到/建造一个安身之处，你不想再次被伴生物或者畸变物杀死了。"
+				"&9[任务需求]&r生存一天"
+				"-收集基础资源打造庇护所，再不济，挖三填一也是个选择。"
+			]
+			hide_until_deps_complete: true
+			id: "56D6DC0439949225"
+			tasks: [{
+				icon: "minecraft:clock"
+				id: "4F3E81D8688EF243"
+				stat: "minecraft:total_world_time"
+				type: "stat"
+				value: 20
+			}]
+			title: "生存一天"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1B7F6249D6B25032"]
+			description: [
+				"在那场惨烈的战斗中，我们失去很多。"
+				"失去文明，失去傲骨，失去血性，失去，所有。"
+				"明与暗角力，不需蝼蚁的窥探，轻轻一声叹息，便将文明沉沦。"
+				"无尽的岁月里，人们幻想着用机械重铸人类的辉煌。"
+				"我们不是第二个前文明，我们将会成为探索的先驱！"
+			]
+			hide_until_deps_complete: true
+			id: "7B5DFB8540B2B8FD"
+			rewards: [{
+				id: "4ADCCA0F234962E8"
+				item: "sophisticatedbackpacks:feeding_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66F7D71FBE39A3F6"
+				title: "失去很多"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["56D6DC0439949225"]
+			hide_until_deps_complete: true
+			id: "51C57687C00FDA51"
+			rewards: [{
+				advancement: "minecraft:story/root"
+				auto: "enabled"
+				criterion: ""
+				icon: "minecraft:grass_block"
+				id: "41619BD99BE7B624"
+				ignore_reward_blocking: true
+				title: "挖三填一"
+				type: "advancement"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "35443AF290D7DB2C"
+				title: "挖三填一有什么错呢？"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1596474C6CEC1F38"]
+			description: [
+				"你曾听闻一个古老的传说：前文明。"
+				"传说之中的前文明掌握了巫术，也有人称为仙术，但不论人们怎么说，它的本质仍然是“契纹”。"
+				"前文明如何毁灭你并不想知晓，但你知道，这并非人们的臆想，而是真实存在的。"
+			]
+			hide_until_deps_complete: true
+			id: "0B55357D38498FB6"
+			shape: "circle"
+			tasks: [{
+				id: "7A58F035DDECD26F"
+				title: "契纹"
+				type: "checkmark"
+			}]
+			title: "古老的传说"
+			x: 2.5d
+			y: 1.0d
+		}
+	]
+	title: "初醒"
+}

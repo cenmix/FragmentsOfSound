@@ -1,0 +1,69 @@
+#=== Monster Outpost Settings ===
+#Base monster spawn count for outpost level 1 (default: 3)
+#Range: 1 ~ 20
+outpost_base_spawn_count = 3
+#Monster count increment per outpost level (default: 1)
+#Range: 0 ~ 5
+outpost_spawn_count_increment = 1
+#Monster spawn count for max level outpost (default: 10)
+#Range: 1 ~ 30
+outpost_max_level_spawn_count = 10
+#Base spawn radius for outpost (default: 6)
+#Range: 3 ~ 20
+outpost_spawn_radius_base = 6
+#Spawn radius increment per outpost level (default: 3)
+#Range: 0 ~ 10
+outpost_spawn_radius_increment = 3
+#Health multiplier for outpost monsters (default: 1.5)
+#Range: 0.5 ~ 5.0
+outpost_monster_health_multiplier = 1.5
+#Damage multiplier for outpost monsters (default: 1.2)
+#Range: 0.5 ~ 5.0
+outpost_monster_damage_multiplier = 1.2
+#Speed multiplier for outpost monsters (default: 1.1)
+#Range: 0.5 ~ 3.0
+outpost_monster_speed_multiplier = 1.1
+#=== Outpost World Generation Settings ===
+#Enable natural outpost spawning (default: true)
+outpost_natural_spawn_enabled = true
+#Chance for an outpost to spawn per chunk (default: 0.2 = 20%)
+#Range: 0.0 ~ 1.0
+outpost_chunk_spawn_chance = 0.2
+#Day when outposts start spawning naturally (default: 2)
+#Range: 1 ~ 30
+outpost_spawn_start_day = 2
+#Outpost level based on distance from spawn (default: true)
+outpost_level_by_distance = true
+#=== Cinematic Settings ===
+#Enable cinematic system (default: true)
+cg_enabled = true
+#Enable day 2 cinematic (default: true)
+cg_day2_cinematic_enabled = true
+#Black screen fade out duration in ticks (default: 40 = 2 seconds)
+#Range: 10 ~ 200
+cg_fade_out_duration = 40
+#Cinematic duration in ticks (default: 200 = 10 seconds)
+#Range: 50 ~ 600
+cg_cinematic_duration = 200
+#Black screen fade in duration in ticks (default: 40 = 2 seconds)
+#Range: 10 ~ 200
+cg_fade_in_duration = 40
+#Hide GUI during cinematic (default: true)
+cg_hide_gui = true
+#Disable player input during cinematic (default: true)
+cg_disable_input = true
+#=== Portal Settings ===
+#Enable portal spawning (default: true)
+portal_enabled = true
+#Number of portals to spawn (default: 5)
+#Range: 1 ~ 12
+portal_count = 5
+#Distance from spawn for portals (default: 25000)
+#Range: 1000.0 ~ 100000.0
+portal_radius = 25000.0
+#Height offset above ground for portals (default: 2)
+#Range: 0 ~ 10
+portal_height_offset = 2
+#Avoid spawning portals in water (default: true)
+portal_avoid_water = true
+

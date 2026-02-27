@@ -1,0 +1,10 @@
+#Sat Feb 21 20:16:26 CST 2026
+shadowDistance=128.0
+LIGHT_SHAFT=false
+SHADOW_FILTER=false
+shadowMapResolution=1024
+TAA=false
+FXAA_EDGE_SENSITIVITY=0
+SHADOW_COLOR=false
+AO=false
+FXAA_SUBPIXEL=0.25

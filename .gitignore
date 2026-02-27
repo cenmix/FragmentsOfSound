@@ -1,0 +1,67 @@
+# ==================== 用户数据 ====================
+# 存档
+saves/
+
+# 玩家数据
+playerdata/
+advancements/
+stats/
+
+# ==================== 日志和崩溃报告 ====================
+logs/
+crash-reports/
+*.log.gz
+hs_err_pid*.log
+
+# ==================== 缓存数据 ====================
+# JourneyMap 地图缓存
+journeymap/data/
+
+# 本地配置缓存
+local/
+
+# JEI 用户数据
+config/jei/world/
+
+# 默认配置
+defaultconfigs/
+
+# 数据库文件
+*.db
+
+# 会话锁
+session.lock
+
+# ==================== 编辑器和启动器 ====================
+# VSCode
+.vscode/
+
+# PCL 启动器数据
+PCL/
+
+# ==================== KubeJS 缓存 ====================
+# probe 缓存（开发时自动生成）
+kubejs/probe/cache/
+
+# 服务器配置（存档内自动生成）
+**/serverconfig/
+
+# ==================== 系统文件 ====================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+._*
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.old
+*~

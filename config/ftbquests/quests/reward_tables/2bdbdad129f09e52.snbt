@@ -1,0 +1,17 @@
+{
+	icon: {
+		Count: 1
+		id: "minecraft:enchanted_book"
+		tag: {
+			StoredEnchantments: [{
+				id: "minecraft:binding_curse"
+				lvl: 1s
+			}]
+		}
+	}
+	id: "2BDBDAD129F09E52"
+	loot_size: 1
+	order_index: 0
+	rewards: [ ]
+	title: "基础武器加成选择"
+}

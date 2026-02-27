@@ -1,0 +1,80 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0D2735048CA8934D"
+	group: ""
+	icon: "create:clipboard"
+	id: "0D2735048CA8934D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&4[叠甲]&r此整合包是作者独立开发的第一个整合包，如果您觉得同质化严重、灌水等，可以和作者反馈，但不要上升至人身攻击，谢谢。"
+				"&1[世界观介绍]&r"
+				"我们现在所处的，是被后人称为“大衰落初期”的时代。"
+				"这个时代，几无生机可言，处处荒草丛生，哀号遍野。"
+				"这一切，都要源于那个锲石，也许曾经拥有各种荣誉和赞美，可几年前，一颗编号为c118的锲石破开了重重封锁，于天空之中撕开了人间最大的裂缝。"
+				"这道裂缝，成为了代代人相传的梦魇。"
+				"它可能曾经被人们称之为破碎空间，但现在，它更愿意被人们称作“锲石的恶意”。"
+				"上亿只伴生物从中倾泻而出，人类派出的所有精锐经过血战，最终，上城失守，全人类拼尽全力，也只是将他们限制在亚洲东部。"
+				"一座座城市沦陷。一片片土地变成死域。"
+				"这就是大衰落初期——旧世纪秩序的崩塌时刻，也是人类被迫重新学会生存的时代。"
+				"如今，野外已经不再安全。伴生物随处可见，从低级的1级杂兵，到足以毁灭一支军队的数十级霸主。它们盘踞在锲石矿脉周围，守护着那些曾经属于人类的资源。"
+				"最讽刺的是，我们拥有的解决方案，也在流失。"
+				"前文明和旧世纪积累的契纹知识——那些真正能够对抗伴生物的技术——十不存一。能刻写契纹的匠人越来越少，能解读古老纹路的学者更是凤毛麟角。"
+				"我们，何时才能摆脱烈焰？何时才能焕发新生？人类的救世主在哪？"
+			]
+			icon: "minecraft:paper"
+			id: "556ED84FDE41F23F"
+			rewards: [{
+				id: "39AFFBC9794B455D"
+				item: "farmersdelight:melon_juice"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14A20AD01BBA01A6"
+				title: "模组介绍"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			description: ["[暂无]"]
+			icon: "create:goggles"
+			id: "7A13279554C1FD30"
+			rewards: [{
+				id: "1104C533034C4FB1"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73FF19E6ECD567E0"
+				title: "鸣谢"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			can_repeat: true
+			description: [""]
+			id: "45A6C5F8A7F5CFBB"
+			rewards: [{
+				auto: "enabled"
+				command: "/gamerule keepInventory true"
+				id: "23162EE720CD1A6A"
+				type: "command"
+			}]
+			tasks: [{
+				id: "49E68B32BF1D00C9"
+				title: "死亡不掉落"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+	]
+	title: "简介"
+}
