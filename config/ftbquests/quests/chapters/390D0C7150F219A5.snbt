@@ -41,7 +41,6 @@
 				""
 				"&9[任务需求]&r收集一些原木。"
 			]
-			hide_until_deps_complete: true
 			icon: "minecraft:oak_log"
 			id: "221C4BB41725A92F"
 			rewards: [{
@@ -52,9 +51,9 @@
 			}]
 			tasks: [{
 				id: "525FB3783E99D5BC"
-				title: "需要更多木头"
 				type: "checkmark"
 			}]
+			title: "需要更多物资"
 			x: 1.5d
 			y: -0.5d
 		}
@@ -64,7 +63,13 @@
 				"在这个世界生存了一天的你，发觉武器在这个多变可怕的世界中显得十分重要。"
 				"&9[任务需求]&r打造一把铁长剑。"
 			]
-			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "spartanweaponry:iron_longsword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "1596474C6CEC1F38"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -94,7 +99,7 @@
 				"&9[任务需求]&r生存一天"
 				"-收集基础资源打造庇护所，再不济，挖三填一也是个选择。"
 			]
-			hide_until_deps_complete: true
+			icon: "minecraft:clock"
 			id: "56D6DC0439949225"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -116,7 +121,7 @@
 				"无尽的岁月里，人们幻想着用机械重铸人类的辉煌。"
 				"我们不是第二个前文明，我们将会成为探索的先驱！"
 			]
-			hide_until_deps_complete: true
+			icon: "create:goggles"
 			id: "7B5DFB8540B2B8FD"
 			rewards: [{
 				id: "4ADCCA0F234962E8"
@@ -133,7 +138,11 @@
 		}
 		{
 			dependencies: ["56D6DC0439949225"]
-			hide_until_deps_complete: true
+			description: [
+				"挖三填一，虽然简陋，但确实是度过第一夜的有效方法。"
+				"在这个危险的世界里，活着才是最重要的。"
+			]
+			icon: "minecraft:dirt"
 			id: "51C57687C00FDA51"
 			rewards: [{
 				advancement: "minecraft:story/root"
@@ -158,10 +167,12 @@
 			dependencies: ["1596474C6CEC1F38"]
 			description: [
 				"你曾听闻一个古老的传说：前文明。"
-				"传说之中的前文明掌握了巫术，也有人称为仙术，但不论人们怎么说，它的本质仍然是“契纹”。"
+				"传说之中的前文明掌握了巫术，也有人称为仙术，但不论人们怎么说，它的本质仍然是"
+				"契纹"
+				"。"
 				"前文明如何毁灭你并不想知晓，但你知道，这并非人们的臆想，而是真实存在的。"
 			]
-			hide_until_deps_complete: true
+			icon: "minecraft:enchanted_book"
 			id: "0B55357D38498FB6"
 			shape: "circle"
 			tasks: [{
@@ -172,6 +183,52 @@
 			title: "古老的传说"
 			x: 2.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["221C4BB41725A92F"]
+			description: [
+				"铁是制作工具和武器的基础材料。"
+				"收集一些铁锭，为后续的冒险做好准备。"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "6E1CA514B44C2C6B"
+			rewards: [{
+				id: "71DCE14FC7F0D97C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "1D38FDF0E2CA41E6"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "收集铁锭"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["221C4BB41725A92F"]
+			description: [
+				"锌是机械动力模组中的重要材料。"
+				"它与铜结合可以制作黄铜，是许多机械部件的基础。"
+			]
+			icon: "create:zinc_ingot"
+			id: "4E31E033B3EAEDA0"
+			rewards: [{
+				id: "1DCA1B4AC0258BE6"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "070FD5A1A4D9B923"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			title: "收集锌锭"
+			x: 1.5d
+			y: 2.0d
 		}
 	]
 	title: "初醒"

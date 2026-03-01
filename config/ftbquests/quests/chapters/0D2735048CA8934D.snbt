@@ -57,24 +57,6 @@
 			x: 0.5d
 			y: -0.5d
 		}
-		{
-			can_repeat: true
-			description: [""]
-			id: "45A6C5F8A7F5CFBB"
-			rewards: [{
-				auto: "enabled"
-				command: "/gamerule keepInventory true"
-				id: "23162EE720CD1A6A"
-				type: "command"
-			}]
-			tasks: [{
-				id: "49E68B32BF1D00C9"
-				title: "死亡不掉落"
-				type: "checkmark"
-			}]
-			x: -0.5d
-			y: 1.5d
-		}
 	]
 	title: "简介"
 }
