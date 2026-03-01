@@ -1,0 +1,717 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "CREATE_MECHANICAL_AGE"
+	group: ""
+	icon: "create:goggles"
+	id: "7F548964EB7C9C6F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"无尽的岁月里，人们幻想着用机械重铸人类的辉煌。"
+				"前文明的机械技术令人向往，而现在，你有机会重现那种辉煌。"
+				""
+				"机械动力，是通往自动化时代的关键。"
+				"从最基础的材料开始，一步步建立起属于你的机械帝国。"
+			]
+			icon: "create:goggles"
+			id: "0816217E409B6EEC"
+			rewards: [{
+				id: "0FF353CF8D1B89D0"
+				item: "create:goggles"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1340DC007C94BCF4"
+				title: "开启机械时代"
+				type: "checkmark"
+			}]
+			title: "机械动力"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"铜是机械时代的基石，它能被锻造成各种精密的机械部件。"
+				"没有铜，就没有齿轮，没有动力，没有自动化。"
+				""
+				"&9[任务需求]&r收集16个铜锭。"
+			]
+			icon: "create:copper_ingot"
+			id: "6BC985F480B02A80"
+			rewards: [{
+				count: 8
+				id: "46805452DD1531FC"
+				item: "create:copper_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68D11A7F1672CA0B"
+				item: {
+					Count: 16
+					id: "create:copper_ingot"
+				}
+				type: "item"
+			}]
+			title: "铜的积累"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"锌是机械动力中不可或缺的材料。"
+				"它与铜结合可以制作黄铜，是许多精密机械部件的基础。"
+				""
+				"&9[任务需求]&r收集16个锌锭。"
+			]
+			icon: "create:zinc_ingot"
+			id: "3351647989245B7F"
+			rewards: [{
+				count: 8
+				id: "62D611939458631B"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "46F22D786F35F100"
+				item: { Count: 16, id: "create:zinc_ingot" }
+				type: "item"
+			}]
+			title: "锌的积累"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"安山岩合金是制作基础机械部件的关键材料。"
+				"将安山岩与铁锭或锌锭合成，即可获得这种重要的合金。"
+				""
+				"&9[任务需求]&r收集8个安山岩合金。"
+			]
+			icon: "create:andesite_alloy"
+			id: "36047A473D9582A7"
+			rewards: [{
+				count: 4
+				id: "4AE7218D53C5737D"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D78403E8293E543"
+				item: { Count: 8, id: "create:andesite_alloy" }
+				type: "item"
+			}]
+			title: "安山岩合金"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"传动轴可以将动力从一处传递到另一处，是机械系统中不可或缺的部件。"
+				"它是构建任何机械装置的基础。"
+				""
+				"&9[任务需求]&r收集16个传动轴。"
+			]
+			icon: "create:shaft"
+			id: "1C81C9954E6C1832"
+			rewards: [{
+				count: 8
+				id: "215D4BA7B0AC6091"
+				item: "create:shaft"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53824F02DF76D92F"
+				item: { Count: 16, id: "create:shaft" }
+				type: "item"
+			}]
+			title: "传动轴"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"齿轮是传递动力的核心部件。"
+				"不同的齿轮组合可以实现速度的改变和动力的传递。"
+				""
+				"&9[任务需求]&r收集16个大齿轮。"
+			]
+			icon: "create:large_cogwheel"
+			id: "704EF8F9D4D693ED"
+			rewards: [{
+				count: 8
+				id: "3EE3F2992A3C7B08"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E4B84E2038969EC"
+				item: { Count: 16, id: "create:large_cogwheel" }
+				type: "item"
+			}]
+			title: "大齿轮"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"小齿轮可以与大齿轮配合使用，实现变速传动。"
+				"它们是复杂机械系统的重要组成部分。"
+				""
+				"&9[任务需求]&r收集16个小齿轮。"
+			]
+			icon: "create:cogwheel"
+			id: "62E685C5497DBB57"
+			rewards: [{
+				count: 8
+				id: "454F85AA7CB31F08"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "032160643D589A17"
+				item: { Count: 16, id: "create:cogwheel" }
+				type: "item"
+			}]
+			title: "小齿轮"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"齿轮箱可以改变转速和扭矩，是变速传动的核心部件。"
+				"它可以将一个输入轴的动力分配到多个输出轴。"
+				""
+				"&9[任务需求]&r合成一个齿轮箱。"
+			]
+			icon: "create:gearbox"
+			id: "5BC92CC5EC01230E"
+			rewards: [{
+				id: "3C9BE032AA3AC7B3"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "366249A678483388"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			title: "齿轮箱"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"离合器可以控制动力的传递与断开，实现机械的精确控制。"
+				"配合红石信号使用，可以实现自动化控制。"
+				""
+				"&9[任务需求]&r合成一个离合器。"
+			]
+			icon: "create:clutch"
+			id: "489D0C92509A9EA9"
+			rewards: [{
+				id: "062F9F3C5D66BFEA"
+				item: "create:clutch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4AEAAD2F62943C5A"
+				item: "create:clutch"
+				type: "item"
+			}]
+			title: "离合器"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"齿轮开关可以手动控制动力的传递。"
+				"右键点击可以切换开关状态。"
+				""
+				"&9[任务需求]&r合成一个齿轮开关。"
+			]
+			icon: "create:gearshift"
+			id: "17E1E16DD6A2172F"
+			rewards: [{
+				id: "602C61F978D79F68"
+				item: "create:gearshift"
+				type: "item"
+			}]
+			tasks: [{
+				id: "64F961AF09EB07C1"
+				item: "create:gearshift"
+				type: "item"
+			}]
+			title: "齿轮开关"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"黄铜是制作高级机械部件的重要材料。"
+				"将铜和锌以一定比例混合，即可获得黄铜锭。"
+				""
+				"&9[任务需求]&r收集8个黄铜锭。"
+			]
+			icon: "create:brass_ingot"
+			id: "22F4BFEEC11711B9"
+			rewards: [{
+				count: 4
+				id: "0ED70613CAC1779E"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "5886E4D6A538B156"
+				item: { Count: 8, id: "create:brass_ingot" }
+				type: "item"
+			}]
+			title: "黄铜冶炼"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"黄铜外壳是制作高级机械方块的基础材料。"
+				"它可以用来制作各种精密的机械装置。"
+				""
+				"&9[任务需求]&r收集4个黄铜外壳。"
+			]
+			icon: "create:brass_casing"
+			id: "6AA2928215BD7825"
+			rewards: [{
+				id: "21B78FFBF6CD627B"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "1697E03895A0D5FC"
+				item: { Count: 4, id: "create:brass_casing" }
+				type: "item"
+			}]
+			title: "黄铜外壳"
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"手摇把手是最简单的动力来源。"
+				"虽然效率不高，但在初期可以为你提供稳定的动力。"
+				""
+				"&9[任务需求]&r合成一个手摇把手。"
+			]
+			icon: "create:hand_crank"
+			id: "673928D64A3CF0AA"
+			rewards: [{
+				id: "5188620B68AFFFD1"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0244235996B05C94"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			title: "手摇把手"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			description: [
+				"应力表可以测量机械系统中的应力大小。"
+				"它可以帮助你避免系统过载。"
+				""
+				"&9[任务需求]&r合成一个应力表。"
+			]
+			icon: "create:stressometer"
+			id: "4688E8BCBA38F685"
+			rewards: [{
+				id: "644B64B53353B4D5"
+				item: "create:stressometer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "193444E0EA5DB4E8"
+				item: "create:stressometer"
+				type: "item"
+			}]
+			title: "应力表"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"转速表可以测量传动轴的旋转速度。"
+				"它可以帮助你优化机械系统的效率。"
+				""
+				"&9[任务需求]&r合成一个转速表。"
+			]
+			icon: "create:speedometer"
+			id: "09F5454873867871"
+			rewards: [{
+				id: "7FEC7EF284634B9C"
+				item: "create:speedometer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "30F180041095BC49"
+				item: "create:speedometer"
+				type: "item"
+			}]
+			title: "转速表"
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"动力大锅是机械动力的重要来源！"
+				"它可以燃烧燃料产生旋转动力，为各种机械提供能量。"
+				""
+				"&9[任务需求]&r合成一个动力大锅。"
+			]
+			icon: "create:encased_fan"
+			id: "021AB395E3682766"
+			rewards: [{
+				id: "61E55D85D75E2D8D"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "14EB9CB89864AA57"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "动力大锅"
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"研磨机是自动化的基础！"
+				"它可以研磨各种材料，将其转化为更细小的产物。"
+				"例如，将铁矿石研磨成粉碎的铁矿石，提高熔炼效率。"
+				""
+				"&9[任务需求]&r合成一个研磨机。"
+			]
+			icon: "create:millstone"
+			id: "5A5A57E5D31FEE71"
+			rewards: [{
+				id: "0D047821284288C1"
+				item: "create:millstone"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "54329F7DE126728D"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: "研磨机"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"粉碎轮是更高效的研磨设备。"
+				"它可以处理大量的材料，是大规模生产的核心设备。"
+				""
+				"&9[任务需求]&r合成一个粉碎轮。"
+			]
+			icon: "create:crushing_wheel"
+			id: "60E021E4656C878E"
+			rewards: [{
+				id: "1896ADD655C7B4B5"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "22746777CEA5A938"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "粉碎轮"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"传送带系统是自动化的命脉！"
+				"它可以自动运输物品，极大提高生产效率。"
+				""
+				"&9[任务需求]&r收集一些传送带。"
+			]
+			icon: "create:belt_connector"
+			id: "379A4884D1138F22"
+			rewards: [{
+				count: 8
+				id: "6AE8F28C314E3D4A"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70C2E1DB2B798ACE"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			title: "传送带"
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			description: [
+				"机械臂可以自动从容器中取出或放入物品。"
+				"它是自动化生产线的关键组件。"
+				""
+				"&9[任务需求]&r合成一个机械臂。"
+			]
+			icon: "create:deployer"
+			id: "223A549ECA17DDBE"
+			rewards: [{
+				id: "20B10E13002F8494"
+				item: "create:deployer"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "10A1A9EDC5940FBB"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "机械臂"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"机械漏斗可以自动收集和分发物品。"
+				"配合传送带使用，可以实现高效的物品运输。"
+				""
+				"&9[任务需求]&r合成一个机械漏斗。"
+			]
+			icon: "create:chute"
+			id: "3E6FFAF2C5A5F862"
+			rewards: [{
+				id: "23A43BBE487C39B1"
+				item: "create:chute"
+				type: "item"
+			}]
+			tasks: [{
+				id: "04E169732AEF2B65"
+				item: "create:chute"
+				type: "item"
+			}]
+			title: "机械漏斗"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"储液罐可以存储各种流体，如水、岩浆等。"
+				"在蒸汽机系统中，储水罐是必不可少的组件。"
+				""
+				"&9[任务需求]&r合成一个储液罐。"
+			]
+			icon: "create:fluid_tank"
+			id: "07ACA1D4969D7E13"
+			rewards: [{
+				id: "6A0F0560C53E481C"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "480395E46AFA968B"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			title: "储液罐"
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"流体管道可以运输各种流体。"
+				"它是建立流体传输系统的基础。"
+				""
+				"&9[任务需求]&r收集一些流体管道。"
+			]
+			icon: "create:fluid_pipe"
+			id: "65C837EB39B4E78F"
+			rewards: [{
+				count: 8
+				id: "55BE6C4D2EC45945"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "76FF17F3AE436286"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			title: "流体管道"
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"流体阀门可以控制流体的流向。"
+				"配合红石信号使用，可以实现精确的流体控制。"
+				""
+				"&9[任务需求]&r合成一个流体阀门。"
+			]
+			icon: "create:fluid_valve"
+			id: "688339FC57E5CA66"
+			rewards: [{
+				id: "714302B815AC001A"
+				item: "create:fluid_valve"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C07D94271123FFD"
+				item: "create:fluid_valve"
+				type: "item"
+			}]
+			title: "流体阀门"
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"蒸汽机是机械动力的一大飞跃！"
+				"它利用蒸汽产生强大的动力，可以驱动更复杂的机械。"
+				"相比动力大锅，蒸汽机的效率更高，动力更强。"
+				""
+				"&9[任务需求]&r合成一台蒸汽机。"
+			]
+			icon: "create:steam_engine"
+			id: "142547501F517C56"
+			rewards: [{
+				id: "6BBD96CAB315DAD1"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3364483A5A92E8C6"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "蒸汽机"
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"烈焰人燃烧室是蒸汽机的最佳搭档。"
+				"它可以提供持续稳定的热源，让蒸汽机高效运转。"
+				""
+				"&9[任务需求]&r合成一个烈焰人燃烧室。"
+			]
+			icon: "create:blaze_burner"
+			id: "720A1805AF90B35A"
+			rewards: [{
+				id: "7675BB63D18750BB"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "2562BDC7CBD0D0A8"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "烈焰人燃烧室"
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			description: [
+				"这是机械动力的一座里程碑！"
+				"你成功建造了完整的蒸汽动力系统，证明了前文明的辉煌并非遥不可及。"
+				"自动化生产线的时代已经到来！"
+				""
+				"&e恭喜你完成了机械动力的基础建设！&r"
+				"接下来，你可以继续探索更高级的机械装置，如火车系统、机械动力武器等。"
+			]
+			icon: "create:steam_whistle"
+			id: "03F0B206E115E430"
+			rewards: [
+				{
+					id: "74DE9A3F0B0EEB93"
+					item: "create:schematic"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "48BE2DE72C6EE946"
+					item: "create:brass_casing"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "492E0831D26DBE6C"
+				title: "蒸汽自动化"
+				type: "checkmark"
+			}]
+			title: "自动化时代"
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"动力活塞可以推动方块，是自动化系统的重要组成部分。"
+				"它可以用来建造自动门、电梯等装置。"
+				""
+				"&9[任务需求]&r合成一个动力活塞。"
+			]
+			icon: "create:mechanical_piston"
+			id: "5496718F8996A8FF"
+			rewards: [{
+				id: "579426FFFB6B714B"
+				item: "create:mechanical_piston"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1325CED420078768"
+				item: "create:mechanical_piston"
+				type: "item"
+			}]
+			title: "动力活塞"
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"动力滑轨可以让动力活塞延伸更长的距离。"
+				"它是建造复杂机械装置的关键组件。"
+				""
+				"&9[任务需求]&r收集一些动力滑轨。"
+			]
+			icon: "create:piston_extension_pole"
+			id: "6CA51655162CE295"
+			rewards: [{
+				count: 8
+				id: "64BDA8BA84F85D26"
+				item: "create:piston_extension_pole"
+				type: "item"
+			}]
+			tasks: [{
+				id: "118095B0B514840B"
+				item: "create:piston_extension_pole"
+				type: "item"
+			}]
+			title: "动力滑轨"
+			x: 12.0d
+			y: 1.0d
+		}
+	]
+	title: "机械动力"
+}

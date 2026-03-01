@@ -10,6 +10,7 @@
   "ae2:pattern_provider": null,
   "ae2:power_storage": null,
   "ae2:server_data": null,
+  "balm:jade": null,
   "immersiveengineering:multiblock_icon": null,
   "immersiveengineering:multiblock_inventory": null,
   "immersiveengineering:multiblock_tank": null,
@@ -63,5 +64,6 @@
   "minecraft:villager_profession": null,
   "minecraft:waxed": null,
   "minecraft:zombie_villager": null,
-  "storagedrawers:main": null
+  "storagedrawers:main": null,
+  "waystones:waystone": null
 }
