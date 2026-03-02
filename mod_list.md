@@ -2,7 +2,7 @@
 
 lib类：[FTB 团队] ftb-teams；[精妙核心] sophisticatedcore；[帕秋莉手册] Patchouli；[钛] titanium；[物品过滤器] item-filters；[犀牛] rhino；Architectury API；balm；botarium；caelus；curios；ftb-library；geckolib；GlitchCore；lithostitched；midnightlib；Placebo；player-animation；sodiumoptionsapi；YungsApi；
 
-辅助类：[FTB任务] ftb-quests；[JEI物品管理器] jei；[极简血量显示] Neat；[坚不可摧] indestructible；[经验机制改革] Clumps；[垃圾槽] trashslot；[旅人标题] TravelersTitles；[旅行地图] journeymap；[跑酷！] ParCool；[配置界面] configured；[苹果皮] appleskin；[全局数据包] globalpacks；[输入法冲突修复] IMBlocker；[鼠标手势] MouseTweaks；[树叶快速腐烂] FastLeafDecay；[物理声效重制版] sound-physics-remastered；[玉 🔍] Jade；[越肩视角重制] ShoulderSurfing；[自动汉化更新] I18nUpdateMod；guideme；
+辅助类：[FTB任务] ftb-quests；[JEI物品管理器] jei；[极简血量显示] Neat；[坚不可摧] indestructible；[经验机制改革] Clumps；[垃圾槽] trashslot；[旅人标题] TravelersTitles；[旅行地图] journeymap；[跑酷！] ParCool；[配置界面] configured；[苹果皮] appleskin；[全局数据包] globalpacks；[输入法冲突修复] IMBlocker；[鼠标手势] MouseTweaks；[树叶快速腐烂] FastLeafDecay；[物理声效重制版] sound-physics-remastered；[玉 🔍] Jade；[越肩视角重制] ShoulderSurfing；[自动汉化更新] I18nUpdateMod；guideme；[mcwifipnp]更高级联机设置；
 
 魔法类：[Iron的法术与魔法书] irons_spellbooks；
 
