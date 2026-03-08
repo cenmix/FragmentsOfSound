@@ -1,0 +1,33 @@
+
+#Elemental Visual Effects Configuration
+#元素视觉特效配置
+[visual_effects]
+
+	#Fire Attribute Visuals
+	#赤焰属性特效
+	[visual_effects.fire_visuals]
+		#Whether to enable Fire attribute melee visual effects (Swing Trail & Impact).
+		#是否开启赤焰属性的近战视觉特效（包含挥动轨迹和命中爆裂）。
+		#Default: true
+		fire_melee_enabled = true
+		#Whether to enable Fire attribute ranged visual effects (Projectile Trail & Impact).
+		#是否开启赤焰属性的远程视觉特效（包含弹射物飞行拖尾和命中爆裂）。
+		#Disable this can improve performance on servers with many entities.
+		#在实体较多的服务器上关闭此项可以提高性能。
+		#Default: true
+		fire_ranged_enabled = true
+
+	#Nature Attribute Visuals
+	#自然属性特效
+	[visual_effects.nature_visuals]
+		#Whether to enable Nature attribute melee visual effects (Blossom Sever & Impact).
+		#是否开启自然属性的近战视觉特效（包含落英斩和极速生长）。
+		#Default: true
+		nature_melee_enabled = true
+		#Whether to enable Nature attribute ranged visual effects (Flora Bolt).
+		#是否开启自然属性的远程视觉特效（包含花神之箭双螺旋轨迹）。
+		#Disable this can improve performance on servers with many entities.
+		#在实体较多的服务器上关闭此项可以提高性能。
+		#Default: true
+		nature_ranged_enabled = true
+

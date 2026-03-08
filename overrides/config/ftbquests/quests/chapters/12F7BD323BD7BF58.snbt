@@ -1,0 +1,97 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "12F7BD323BD7BF58"
+	group: "7A11444F86B1AC7D"
+	id: "12F7BD323BD7BF58"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"锲石科技是这个时代最先进的科技系统。"
+				"它结合了机械动力和通用机械的优点。"
+			]
+			id: "24F64B80F55A91F3"
+			rewards: [{
+				id: "2D4D6D5EF689C364"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "5AFCA0623E98F95F"
+				title: "锲石科技"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24F64B80F55A91F3"]
+			description: [
+				"机械动力提供了齿轮、轴和动力传输系统。"
+				"通过水车、风车等产生动力。"
+				"&9[提示]&r完成机械动力入门章节了解更多。"
+			]
+			id: "04AFBE66205BE402"
+			rewards: [{
+				id: "4D6BD890C3946E63"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				icon: "create:wrench"
+				id: "1194FD4D5AA7E073"
+				title: "机械动力"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["24F64B80F55A91F3"]
+			description: [
+				"通用机械提供了电力系统、矿石处理和气体系统。"
+				"&9[提示]&r完成通用机械入门章节了解更多。"
+			]
+			id: "0AE88F8888732B19"
+			rewards: [{
+				id: "6EF02820ACE47B26"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				icon: "mekanism:basic_universal_cable"
+				id: "34DDBF4B3069A0ED"
+				title: "通用机械"
+				type: "custom"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24F64B80F55A91F3"]
+			description: [
+				"电力是现代科技的基础。"
+				"通过发电机产生电力，存储在能量立方体中。"
+				"&9[提示]&r通用机械提供了完整的电力系统。"
+			]
+			id: "0CA9C1BA2865B99F"
+			rewards: [{
+				id: "6F41C7B0A140E918"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				icon: "mekanism:energized_smelter"
+				id: "2171D826E35D1C88"
+				title: "电力"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+	]
+	title: "支线：锲石科技"
+}
