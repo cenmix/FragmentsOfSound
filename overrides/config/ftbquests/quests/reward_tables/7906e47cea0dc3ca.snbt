@@ -1,0 +1,51 @@
+{
+	icon: {
+		Count: 1
+		id: "create:sand_paper"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "7906E47CEA0DC3CA"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			count: 5
+			item: {
+				Count: 1
+				id: "minecraft:oak_log"
+				tag: { }
+			}
+		}
+		{
+			count: 10
+			item: {
+				Count: 1
+				id: "minecraft:coal"
+				tag: { }
+			}
+		}
+		{
+			count: 2
+			item: {
+				Count: 1
+				id: "minecraft:raw_iron"
+				tag: { }
+			}
+		}
+		{
+			count: 5
+			item: {
+				Count: 1
+				id: "minecraft:raw_copper"
+				tag: { }
+			}
+		}
+		{
+			type: "xp_levels"
+			xp_levels: 2
+		}
+	]
+	title: "基础物资奖励表"
+}

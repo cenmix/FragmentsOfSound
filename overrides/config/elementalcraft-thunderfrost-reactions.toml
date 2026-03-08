@@ -1,0 +1,81 @@
+
+#Static Shock (Thunder) Reaction Configuration
+#静电（雷霆）反应配置
+[static_shock]
+
+	#Trigger & Stack Rules
+	#触发与叠加规则
+	[static_shock.trigger_and_stack]
+		#Minimum Thunder Strength points required for the attacker to have a chance to apply Static Shock.
+		#攻击者触发静电效果所需的最低雷霆属性强化点数。
+		#Default: 20
+		#Range: 1 ~ 10000
+		thunder_strength_threshold = 20
+		#Base chance (as a decimal) to apply Static Shock on attack when the threshold is met.
+		#达到门槛后，攻击触发静电的基础概率（小数形式）。
+		#Default: 0.05 (5%)
+		#Range: 0.0 ~ 1.0
+		static_base_chance = 0.05
+		#Strength step size for increasing the application chance.
+		#触发概率成长所需的强化点数步长。
+		#Default: 20
+		#Range: 1 ~ 10000
+		static_scaling_step = 20
+		#Additional chance (as a decimal) gained per each scaling step.
+		#每达到一个步长增加的额外概率（小数形式）。
+		#Default: 0.05 (5%)
+		#Range: 0.0 ~ 1.0
+		static_scaling_chance = 0.05
+		#Maximum number of Static Shock stacks that can be applied in a single attack.
+		#单次攻击最多可施加的静电层数。
+		#Default: 1
+		#Range: 1 ~ 100
+		static_max_stacks_per_attack = 1
+		#Maximum total stacks of Static Shock a target can have. Once reached, no more stacks can be applied.
+		#目标身上静电的最大总层数。达到上限后无法继续叠加。
+		#Default: 5
+		#Range: 1 ~ 1000
+		static_max_total_stacks = 5
+		#Base duration (in ticks) per stack of Static Shock. 20 ticks = 1 second.
+		#每层静电的基础持续时间（以刻为单位）。20刻 = 1秒。
+		#Default: 100 (5 seconds)
+		#Range: 1 ~ 72000
+		static_duration_per_stack_ticks = 100
+
+	#Immunity Rule
+	#免疫规则
+	[static_shock.immunity]
+		#Thunder Resistance points required for an entity to become completely immune to Static Shock (both stacking and damage).
+		#实体完全免疫静电（叠加和伤害）所需的雷霆抗性点数。
+		#Default: 80
+		#Range: 1 ~ 10000
+		static_resist_immunity_threshold = 80
+
+	#Periodic Damage (Damage over Time)
+	#周期性伤害（持续伤害）
+	[static_shock.periodic_damage]
+		#Interval (in ticks) between each damage tick while Static Shock is active. 20 ticks = 1 second.
+		#静电生效期间，每次造成伤害的间隔（以刻为单位）。20刻 = 1秒。
+		#Default: 100 (5 seconds)
+		#Range: 1 ~ 72000
+		static_damage_interval_ticks = 100
+		#Minimum damage dealt per damage tick (in half-hearts, where 1.0 = 1 heart).
+		#每次伤害的最小值（以半心为单位，1.0 = 1心）。
+		#Default: 1.0
+		#Range: 0.0 ~ 10000.0
+		static_damage_min = 1.0
+		#Maximum damage dealt per damage tick (in half-hearts, where 1.0 = 1 heart).
+		#每次伤害的最大值（以半心为单位，1.0 = 1心）。
+		#Default: 5.0
+		#Range: 0.0 ~ 10000.0
+		static_damage_max = 5.0
+
+	#Guaranteed Hits per Stack
+	#每层保底伤害次数
+	[static_shock.guaranteed_hits]
+		#Number of damage ticks that must occur per stack of Static Shock during its duration. Total required hits = stacks × hits_per_stack.
+		#每层静电在持续时间内必须触发的伤害次数。总所需次数 = 层数 × 每层次数。
+		#Default: 1
+		#Range: 1 ~ 100
+		static_hits_per_stack = 1
+

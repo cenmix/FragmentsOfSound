@@ -26,70 +26,17 @@
 			]
 			icon: "minecraft:enchanted_golden_apple"
 			id: "1B7F6249D6B25032"
+			rewards: [{
+				id: "4ADCCA0F234962E8"
+				type: "xp"
+				xp: 50
+			}]
 			tasks: [{
 				id: "0271FD9ED4065FCA"
 				title: "开始旅途"
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["56D6DC0439949225"]
-			description: [
-				"在重建之中，木头是&7最基础&r的建筑与合成材料。"
-				""
-				"&9[任务需求]&r收集一些原木。"
-			]
-			icon: "minecraft:oak_log"
-			id: "221C4BB41725A92F"
-			rewards: [{
-				count: 5
-				id: "05445237B43D0517"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
-			tasks: [{
-				id: "525FB3783E99D5BC"
-				type: "checkmark"
-			}]
-			title: "需要更多物资"
-			x: 1.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["221C4BB41725A92F"]
-			description: [
-				"在这个世界生存了一天的你，发觉武器在这个多变可怕的世界中显得十分重要。"
-				"&9[任务需求]&r打造一把铁长剑。"
-			]
-			icon: {
-				Count: 1
-				id: "spartanweaponry:iron_longsword"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "1596474C6CEC1F38"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0BDF0561C77CA88F"
-				table_id: 3160360155417189970L
-				type: "choice"
-			}]
-			tasks: [{
-				id: "1A056EF0A0424609"
-				item: {
-					Count: 1
-					id: "spartanweaponry:iron_longsword"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "制作第一把武器"
-			x: 2.5d
 			y: -0.5d
 		}
 		{
@@ -101,6 +48,11 @@
 			]
 			icon: "minecraft:clock"
 			id: "56D6DC0439949225"
+			rewards: [{
+				id: "091A995238EE26DC"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				icon: "minecraft:clock"
 				id: "4F3E81D8688EF243"
@@ -124,9 +76,9 @@
 			icon: "create:goggles"
 			id: "7B5DFB8540B2B8FD"
 			rewards: [{
-				id: "4ADCCA0F234962E8"
-				item: "sophisticatedbackpacks:feeding_upgrade"
-				type: "item"
+				id: "4ACA8199B31D0BD3"
+				type: "xp"
+				xp: 50
 			}]
 			tasks: [{
 				id: "66F7D71FBE39A3F6"
@@ -137,99 +89,408 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["56D6DC0439949225"]
+			dependencies: ["1B7F6249D6B25032"]
 			description: [
-				"挖三填一，虽然简陋，但确实是度过第一夜的有效方法。"
-				"在这个危险的世界里，活着才是最重要的。"
+				"要在这个世界生存下去，你需要最基础的工具。"
+				"木头是万物的起点。"
+				"&9[任务需求]&r收集原木"
 			]
-			icon: "minecraft:dirt"
-			id: "51C57687C00FDA51"
+			icon: "minecraft:oak_log"
+			id: "2A1B3C4D5E6F7A8B"
 			rewards: [{
-				advancement: "minecraft:story/root"
-				auto: "enabled"
-				criterion: ""
-				icon: "minecraft:grass_block"
-				id: "41619BD99BE7B624"
-				ignore_reward_blocking: true
-				title: "挖三填一"
-				type: "advancement"
+				id: "3B2C1D4E5F6A7B8C"
+				type: "xp"
+				xp: 30
 			}]
-			shape: "circle"
 			tasks: [{
-				id: "35443AF290D7DB2C"
-				title: "挖三填一有什么错呢？"
-				type: "checkmark"
+				count: 8L
+				id: "4C3D2E1F0A9B8C7D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "任意原木"
+				type: "item"
 			}]
+			title: "获取原木"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2A1B3C4D5E6F7A8B"]
+			description: [
+				"有了木头，你就可以制作工作台了。"
+				"这是所有制作的起点。"
+				"&9[任务需求]&r制作工作台"
+			]
+			icon: "minecraft:crafting_table"
+			id: "5D6E7F8A9B0C1D2E"
+			rewards: [{
+				id: "6E7F8A9B0C1D2E3F"
+				type: "xp"
+				xp: 30
+			}]
+			tasks: [{
+				id: "7F8A9B0C1D2E3F4A"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "制作工作台"
 			x: 0.5d
 			y: 1.0d
 		}
 		{
-			dependencies: ["1596474C6CEC1F38"]
+			dependencies: ["5D6E7F8A9B0C1D2E"]
 			description: [
-				"你曾听闻一个古老的传说：前文明。"
-				"传说之中的前文明掌握了巫术，也有人称为仙术，但不论人们怎么说，它的本质仍然是"
-				"契纹"
-				"。"
-				"前文明如何毁灭你并不想知晓，但你知道，这并非人们的臆想，而是真实存在的。"
+				"现在制作一把木镐，开始你的采矿之旅。"
+				"&9[任务需求]&r制作木镐"
 			]
-			icon: "minecraft:enchanted_book"
-			id: "0B55357D38498FB6"
-			shape: "circle"
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "59E075CCCE17BF4D"
+			rewards: [
+				{
+					id: "72F6C77FEDE8776C"
+					type: "xp"
+					xp: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32D23518EF22472E"
+					table_id: 8720908953603392458L
+					type: "choice"
+				}
+			]
 			tasks: [{
-				id: "7A58F035DDECD26F"
-				title: "契纹"
-				type: "checkmark"
+				id: "399241B0C6241126"
+				item: {
+					Count: 1
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
 			}]
-			title: "古老的传说"
+			title: "制作镐子"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["59E075CCCE17BF4D"]
+			description: [
+				"向下挖掘，寻找石头。"
+				"石头是建造坚固庇护所的基础材料。"
+				"&9[任务需求]&r收集圆石"
+			]
+			icon: "minecraft:cobblestone"
+			id: "1D2E3F4A5B6C7D8E"
+			rewards: [{
+				id: "2E3F4A5B6C7D8E9F"
+				type: "xp"
+				xp: 40
+			}]
+			tasks: [{
+				count: 32L
+				id: "3F4A5B6C7D8E9F0A"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "收集圆石"
 			x: 2.5d
 			y: 1.0d
 		}
 		{
-			dependencies: ["221C4BB41725A92F"]
+			dependencies: ["1D2E3F4A5B6C7D8E"]
 			description: [
-				"铁是制作工具和武器的基础材料。"
-				"收集一些铁锭，为后续的冒险做好准备。"
+				"在地下深处，你能找到铁矿。"
+				"铁是这个时代最重要的资源之一。"
+				"&9[任务需求]&r收集铁矿石"
 			]
-			icon: "minecraft:iron_ingot"
-			id: "6E1CA514B44C2C6B"
+			icon: "minecraft:raw_iron"
+			id: "4A5B6C7D8E9F0A1B"
 			rewards: [{
-				id: "71DCE14FC7F0D97C"
-				item: "minecraft:iron_ingot"
-				type: "item"
+				id: "5B6C7D8E9F0A1B2C"
+				type: "xp"
+				xp: 50
 			}]
-			shape: "circle"
 			tasks: [{
-				id: "1D38FDF0E2CA41E6"
-				item: "minecraft:iron_ingot"
+				count: 10L
+				id: "6C7D8E9F0A1B2C3D"
+				item: "minecraft:raw_iron"
 				type: "item"
 			}]
-			title: "收集铁锭"
-			x: 1.5d
+			title: "寻找铁矿"
+			x: 3.5d
 			y: 1.0d
 		}
 		{
-			dependencies: ["221C4BB41725A92F"]
+			dependencies: ["4A5B6C7D8E9F0A1B"]
 			description: [
-				"锌是机械动力模组中的重要材料。"
-				"它与铜结合可以制作黄铜，是许多机械部件的基础。"
+				"你需要一个熔炉来冶炼矿石。"
+				"&9[任务需求]&r制作熔炉"
 			]
-			icon: "create:zinc_ingot"
-			id: "4E31E033B3EAEDA0"
+			icon: "minecraft:furnace"
+			id: "7D8E9F0A1B2C3D4E"
 			rewards: [{
-				id: "1DCA1B4AC0258BE6"
-				item: "minecraft:iron_block"
-				type: "item"
+				id: "7200D0F30B9E4F52"
+				type: "xp"
+				xp: 40
 			}]
-			shape: "circle"
 			tasks: [{
-				id: "070FD5A1A4D9B923"
-				item: "create:zinc_ingot"
+				id: "1F4FBAE1B95FB52C"
+				item: "minecraft:furnace"
 				type: "item"
 			}]
-			title: "收集锌锭"
+			title: "制作熔炉"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7D8E9F0A1B2C3D4E"]
+			description: [
+				"将铁矿石冶炼成铁锭。"
+				"&9[任务需求]&r获得铁锭"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "0A1B2C3D4E5F6A7B"
+			rewards: [{
+				id: "1B2C3D4E5F6A7B8C"
+				type: "xp"
+				xp: 60
+			}]
+			tasks: [{
+				count: 5L
+				id: "2C3D4E5F6A7B8C9D"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "冶炼铁锭"
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0A1B2C3D4E5F6A7B"]
+			description: [
+				"铁制工具比石制工具更耐用、更高效。"
+				"&9[任务需求]&r制作铁制工具"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3D4E5F6A7B8C9D0A"
+			rewards: [
+				{
+					id: "4E5F6A7B8C9D0A1B"
+					type: "xp"
+					xp: 80
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4317C900F6D05A86"
+					table_id: 8720908953603392458L
+					type: "all_table"
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "44D59D32BE8435CD"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:iron_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_helmet"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_chestplate"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_leggings"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "minecraft:iron_boots"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "铁制工具"
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4F3E81D8688EF243"]
+			description: [
+				"夜幕降临，危险也随之而来。"
+				"你需要一个安全的庇护所。"
+				"&9[任务需求]&r建造一个简易庇护所"
+			]
+			icon: "minecraft:cobblestone"
+			id: "7B8C9D0A1B2C3D4E"
+			rewards: [{
+				id: "7E625FCC4E26CFA6"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "7B665074B87B0527"
+				title: "建造庇护所"
+				type: "checkmark"
+			}]
+			title: "安身之处"
 			x: 1.5d
-			y: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7B8C9D0A1B2C3D4E"]
+			description: [
+				"一张床能让你安全地度过夜晚。"
+				"羊毛可以从羊身上获得。"
+				"&9[任务需求]&r制作床"
+			]
+			icon: "minecraft:red_bed"
+			id: "4A46E5118F27B202"
+			rewards: [{
+				id: "4DE3250F19C8E5FB"
+				type: "xp"
+				xp: 80
+			}]
+			tasks: [{
+				id: "1468848EEE72DF73"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+				title: "任意床"
+				type: "item"
+			}]
+			title: "温暖之床"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["56D6DC0439949225"]
+			description: [
+				"恭喜你在这个世界存活了一天！"
+				"你已经掌握了基本的生存技能。"
+				"接下来，你可以探索更多内容："
+				"&a- 食物与农业&r"
+				"&a- 武器与战斗&r"
+				"&a- 机械动力科技&r"
+				"&a- 通用机械科技&r"
+			]
+			hide_until_deps_complete: true
+			id: "05D290E4D7AC6F45"
+			rewards: [{
+				id: "16632195D7448469"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				icon: "minecraft:nether_star"
+				id: "4C8A7E82D0B45E38"
+				title: "恭喜你活过了一天！"
+				type: "custom"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"05D290E4D7AC6F45"
+				"3D4E5F6A7B8C9D0A"
+			]
+			icon: {
+				Count: 1
+				id: "terramity:railgun"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "11EB22D1639C2B73"
+			tasks: [{
+				id: "4E31766E91102611"
+				title: "保护自身"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 0.0d
 		}
 	]
-	title: "初醒"
+	title: "主线：初醒"
 }

@@ -1,0 +1,218 @@
+
+#Mob Attribute Generation System
+#怪物属性生成系统
+[mob_attribute_generation]
+	#Chance for hostile mobs (e.g., Zombies, Skeletons) to become elemental
+	#敌对生物（如僵尸、骷髅）成为属性生物的概率
+	#Range: 0.0 ~ 1.0
+	mob_attribute_chance_hostile = 0.4
+	#Chance for neutral mobs (e.g., Piglins, Endermen) to become elemental
+	#中立生物（如猪灵、末影人）成为属性生物的概率
+	#Range: 0.0 ~ 1.0
+	mob_attribute_chance_neutral = 0.3
+	#Chance to gain an attack attribute (weapon enchantment) when generating attributes
+	#怪物生成属性时，获得攻击属性（武器附魔）的概率
+	#Range: 0.0 ~ 1.0
+	attack_attribute_chance = 0.6
+	#Chance to gain resistance against the element that counters them
+	#怪物生成属性时，获得对应抗性（防止被自己克制）的概率
+	#Range: 0.0 ~ 1.0
+	counter_resist_chance = 0.7
+	#Probability Distribution for Mob Strength & Resistance (Sum should be <= 1.0)
+	#【怪物强化值与抗性统一分段概率】（总和建议 ≤1.0）
+	#Range: 0.0 ~ 1.0
+	chance_0_20 = 0.4
+	#Range: 0.0 ~ 1.0
+	chance_30_50 = 0.3
+	#Range: 0.0 ~ 1.0
+	chance_60_80 = 0.15
+	#Range: 0.0 ~ 1.0
+	chance_90_100 = 0.1
+
+#Attribute Value System
+#属性数值系统
+[attribute_values]
+	#Strength value provided per level of [Elemental Strength] enchantment
+	#每级【属性强化】附魔提供多少强化值（玩家装备显示的就是这个数 × 等级）
+	#Range: 1 ~ 1000
+	strength_per_level = 5
+	#Resistance value provided per level of [Hidden Resistance] enchantment
+	#每级属性抗性附魔提供多少抗性值
+	#Range: 1 ~ 1000
+	resist_per_level = 5
+
+#Elemental Damage System
+#属性伤害系统
+[elemental_damage]
+	#How many strength points increase elemental damage by 0.5
+	#多少点强化值使属性伤害增加0.5
+	#Range: 1 ~ 1000
+	strength_per_half_damage = 10
+	#How many resistance points reduce elemental damage by 0.5
+	#多少点抗性值使属性伤害减少0.5
+	#Range: 1 ~ 1000
+	resist_per_half_reduction = 10
+	#Global Elemental Damage Multiplier
+	#全局属性伤害倍率
+	#Range: 0.0 ~ 100.0
+	elemental_damage_multiplier = 0.75
+	#Global Elemental Resistance Multiplier
+	#全局属性抗性减免倍率
+	#Range: 0.0 ~ 100.0
+	elemental_resistance_multiplier = 1.0
+	#Maximum point cap for a single attribute
+	#单种属性最大点数上限
+	#Range: 10 ~ 100000
+	max_stat_cap = 25
+
+#Elemental Restraint System
+#属性克制系统
+[elemental_restraints]
+	#Damage multiplier when target is restrained
+	#克制伤害倍率
+	#Range: 0.1 ~ 10.0
+	restraint_multiplier = 1.5
+	#Damage multiplier when target resists the element
+	#被克制伤害倍率
+	#Range: 0.1 ~ 10.0
+	weak_multiplier = 0.5
+	#Minimum damage percentage of original elemental damage when restrained and resistance fully negates it
+	#当克制且抗性完全抵消伤害时，最低保留原始元素伤害的百分比（0.0 ~ 1.0）
+	#Range: 0.0 ~ 1.0
+	restraint_min_damage_percent = 0.1
+	#Restraint Relations: Attacker -> Victim
+	#克制关系：克制方 -> 被克制方
+	#Supported IDs: fire, nature, frost, thunder
+	#支持属性ID：fire, nature, frost, thunder
+	#Example: fire->thunder means Fire restrains Frost
+	#示例：fire->thunder 表示赤焰克制冰霜
+	element_restraints = ["fire->nature", "nature->thunder", "thunder->frost", "frost->fire"]
+
+#Forced Attribute System
+#强制属性系统
+[forced_attributes]
+	#
+	#Custom Forced Entity Attributes List
+	#【自定义强制属性生物列表】
+	#
+	#One entity per line, enclosed in double quotes ""
+	#每行写一个生物，整行必须用 英文双引号 "" 包起来
+	#Format (Strictly 6 fields):
+	#格式（严格6个字段）：
+	#    "EntityID,AttackElement,StrengthElement,StrengthPoints,ResistElement,ResistPoints"
+	#    "实体ID,攻击属性,强化属性,强化点数,抗性属性,抗性点数"
+	#
+	#Element IDs: fire / frost / thunder / nature / none / empty = none
+	#属性ID：fire / frost / thunder / nature / none / 留空=无
+	#Points:
+	#点数：
+	#    • Fixed value: 100
+	#    • 固定值：100
+	#    • Random range: 0-100 / 50-250 (Randomized within range, step 10, follows global chance settings)
+	#    • 随机范围：0-100 / 50-250（会在范围内随机，步进10，完全遵循 chance_0_20~chance_80_100 概率）
+	#    • Empty or 0 = No attribute
+	#    • 留空或写0 = 不给该属性
+	#
+	#Examples / 示例：
+	#    "minecraft:zombie,fire,fire,100,fire,100"               # Fire Zombie, 100 Str, 100 Res / 赤焰僵尸，赤焰强化100，赤焰抗性100
+	#    "minecraft:skeleton,,nature,50-100,nature,100"         # Skeleton: Nature Str 50-100, Nature Res 100 / 骷髅只有自然强化50-100随机，自然抗性固定100
+	#    "minecraft:piglin,thunder,thunder,200,frost,150-400"   # Piglin: Thunder Atk/Str 200, Frost Res 150-400 / 猪灵雷属性攻击和雷属性强化+冰霜抗性150-400随机
+	#    "minecraft:creeper,none,fire,0-150,fire,50-200"        # Creeper: No Atk, Fire Str 0-150, Fire Res 50-200 / 爬行者无攻击，赤焰强化0-150随机+赤焰抗性50-200随机
+	#    "minecraft:blaze,,,fire,300"                           # Blaze: Fire Res 300 only / 烈焰人无攻击无强化，只有赤焰抗性300
+	#    "minecraft:wither,thunder,,100-500,,200-800"           # Wither: Thunder Atk, Random Str/Res / 凋灵雷攻击，强化和抗性都随机
+	forced_entities = []
+
+#Force Fire attributes for all mobs in Nether
+#下界维度全生物强制赤焰属性
+[nether_forced_fire]
+	#Enable: All mobs spawned in Nether (including modded) force gain Fire Attack + Max Fire Strength + Max Fire Resist
+	#是否开启：下界维度中所有生成的生物（包括模组怪）强制获得赤焰攻击 + 满级赤焰强化 + 满级赤焰抗性
+	#Disable to use normal random generation or forced_entities config
+	#关闭后恢复正常概率生成或按 forced_entities 配置
+	nether_dimension_forced_fire = true
+	#Forced Fire attribute points in Nether (Used for both Strength and Resistance)
+	#下界强制赤焰属性点数（强化和抗性都用这个值）
+	#Per level requires STRENGTH_PER_LEVEL * Level points
+	#每级强化需要 STRENGTH_PER_LEVEL * 等级 点数
+	#Range: 100 ~ 100000
+	nether_fire_points = 100
+
+#Force Thunder attributes for all mobs in The End
+#末地维度全局强制雷属性（与下界赤焰属性同级功能）
+[end_forced_thunder]
+	#Enable: All mobs spawned in The End force gain Thunder Attack + Max Thunder Strength + Max Thunder Resist
+	#是否开启：末地维度中所有生成的生物强制获得雷攻击 + 满级雷强化 + 满级雷抗性
+	#Disable to use normal random generation or forced_entities config
+	#关闭后恢复正常随机或按 forced_entities 配置
+	end_dimension_forced_thunder = true
+	#Forced Thunder attribute points in The End (Used for Attack, Strength, and Resistance)
+	#末地强制雷属性点数（攻击、强化、抗性三者都用这个值）
+	#Recommended to set >= max_stat_cap
+	#建议设为 max_stat_cap 的值或更高
+	#Range: 100 ~ 100000
+	end_thunder_points = 100
+
+#Blacklist System
+#黑名单系统
+[blacklist]
+	#
+	#Entity Attribute Blacklist
+	#【属性生物黑名单】
+	#
+	#Listed entities will NEVER become elemental mobs.
+	#填入的生物永远不会成为属性生物。
+	#Prevents attributes even in Nether/End or via random generation.
+	#即使在下界/末地或随机生成也不会获得属性。
+	#
+	#Format: Entity ID
+	#格式：直接写实体ID即可
+	#Examples / 示例：
+	#    "minecraft:creeper"      # Creeper never gains attributes / 苦力怕永不获得属性
+	#    "minecraft:ghast"        # Ghast never gains attributes / 恶魂永不获得属性
+	#    "minecraft:ender_dragon" # Ender Dragon never gains attributes / 末影龙永不获得属性
+	blacklisted_entities = []
+
+#Biome & Weather Attribute Bias System
+#生物群系 & 天气 属性偏好系统
+#Values represent percentage probability (%) for that element in that context.
+#每个值直接代表对应环境下该属性的生成概率（%）
+#Probabilities are automatically normalized.
+#填多少就是多少概率，会自动归一化处理
+#Thunderstorm weather has highest priority.
+#雷雨天气优先级最高，会强制使用雷霆配置的概率
+[biome_weather_bias]
+	#Probability (%) for Fire element in Hot biomes (Desert, Jungle, Badlands)
+	#炎热生物群系（如沙漠、丛林、恶地）生成赤焰属性的概率（%）
+	#Range: 0.0 ~ 100.0
+	hot_fire_bias = 60.0
+	#Probability (%) for Frost element in Cold biomes (Snowy, Ice Spikes, Frozen Ocean)
+	#寒冷生物群系（如雪原、冰刺、冻洋）生成冰霜属性的概率（%）
+	#Range: 0.0 ~ 100.0
+	cold_frost_bias = 60.0
+	#Probability (%) for Nature element in Forest biomes (Forests, Jungles, Flower Forests)
+	#森林类生物群系（如所有森林、丛林、花林）生成自然属性的概率（%）
+	#Range: 0.0 ~ 100.0
+	forest_nature_bias = 60.0
+	#Probability (%) for Thunder element during Thunderstorms (Global)
+	#雷雨天气时生成雷霆属性的概率（%），全局生效
+	#Range: 0.0 ~ 100.0
+	thunderstorm_thunder_bias = 80.0
+
+#Custom Biome Attribute Probabilities
+#自定义生物群系属性概率
+#Format: "BiomeID,ElementID,Probability"
+#格式："群系ID,属性ID,概率值"
+#BiomeID: e.g., minecraft:desert, minecraft:snowy_plains
+#群系ID：原版如 minecraft:desert, minecraft:snowy_plains
+#ElementID: fire / frost / thunder / nature
+#属性ID：fire / frost / thunder / nature
+#Probability: 0-100 (%), multiple entries for same biome accumulate weight
+#概率值：0~100（%），同一群系多个条目会叠加权重
+#Examples / 例子：
+#  "minecraft:desert,fire,70"       # Desert: 70% Fire / 沙漠70%概率生成赤焰属性
+#  "minecraft:snowy_plains,frost,80" # Snowy: 80% Frost / 雪原80%概率生成冰霜属性
+#  "minecraft:jungle,nature,60"     # Jungle: 60% Nature / 丛林60%概率生成自然属性
+#  "minecraft:desert,frost,30"      # Desert: 30% Frost (Extreme gameplay) / 沙漠也可以有30%冰霜（极端玩法）
+[custom_biome_attribute_bias]
+	custom_biome_attribute_bias = []
+
